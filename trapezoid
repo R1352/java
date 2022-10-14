@@ -1,0 +1,38 @@
+abstract class shape
+{
+abstract int numberofSides();
+}
+class Trapezium extends shape
+{
+int numberofSides()
+{
+return 4;
+}
+}
+class Triangle extends shape
+{     
+int numberofSides()
+{                                 
+return 3;
+}
+}
+class Hexagon extends shape
+{
+int numberofSides()
+{
+return 6;
+}
+}
+public class trapezoid
+{
+public static void main(String args[])
+{
+shape tr;
+tr=new Trapezium();
+System.out.println("there is "+tr.numberofSides()+" sides in a Trapezium");
+tr=new Triangle();
+System.out.println("there is "+tr.numberofSides()+" sides in a Triangle");
+tr=new Hexagon();
+System.out.println("there is "+tr.numberofSides()+" sides in a Hexagon");
+}
+}
